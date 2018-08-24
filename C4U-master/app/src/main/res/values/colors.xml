@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="allcolor">#00B7AD</color>
+    <color name="allcolor_bt">#00a8b7</color>
+    <color name="allwhite">#FFFFFF</color>
+    <color name="titleColor">#757575</color>
+    <color name="Font_color">#979797</color>
+    <color name="titleColorSelected">#F54D33</color>
+    <color name="login_color">#F6F5FA</color>
+    <color name="welome_font_color">#9A9A9A</color>
+</resources>
