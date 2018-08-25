@@ -14,7 +14,7 @@
      <TextView
          android:id="@+id/call_tv"
          android:gravity="center"
-         android:drawableTop="@drawable/video_call"
+         android:drawableTop="@drawable/video_call_press_button"
          android:textColor="@color/Font_color"
          android:textSize="@dimen/Font_size"
          android:text="@string/video_call"
@@ -24,7 +24,7 @@
 
      <TextView
          android:gravity="center"
-         android:drawableTop="@drawable/remote_control"
+         android:drawableTop="@drawable/remote_control_press_button"
          android:textColor="@color/Font_color"
          android:textSize="@dimen/Font_size"
          android:text="@string/remote_control"
