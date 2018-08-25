@@ -2,15 +2,182 @@ package com.app.CClient.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.app.CClient.Utlis.AESHelper;
+import com.app.CClient.Utlis.HttpUtils;
+import com.app.CClient.Utlis.utils;
 import com.app.CClient.fragmenttabhost.R;
 
-public class RegisterActivity extends Activity {
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegisterActivity extends Activity implements OnClickListener{
+    private EditText register_user_et,register_password_et,register_confirmpassword_et,register_email_et;
+    private Button register_bt;
+    private Handler handle = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            if(msg.what == 11){
+                utils.showToast(RegisterActivity.this,getText(R.string.http_data_error),0);
+            }
+            if(msg.what == 1){
+                //Parameter error returns error
+                //User name repeatedly returned no
+                //registerSuccess ok
+
+                String strResult = (String)msg.obj;
+                String resultReal = /*AESHelper.decrypt(strResult, AppcalitaionContext.AES_PASSWORD)*/"";
+                try{
+                    if(resultReal.equals("error")){
+                        utils.showToast(RegisterActivity.this,getText(R.string.http_parameters_error),0);
+                        return;
+                    }
+                    if(resultReal.equals("no")){
+                        utils.showToast(RegisterActivity.this,getText(R.string.Account_name_exists),0);
+                        return;
+                    }
+                    if(resultReal.equals("ok")){
+                        utils.showToast(RegisterActivity.this,getText(R.string.register_Success),0);
+                        finish();
+                    }
+                }catch (Exception e){
+
+                }
+
+            }
+        }
+    };
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        initview();
 
+    }
+    private void initview(){
+        register_user_et = (EditText) findViewById(R.id.register_user_et);
+        register_user_et.setOnClickListener(this);
+        register_password_et = (EditText) findViewById(R.id.register_password_et);
+        register_password_et.setOnClickListener(this);
+        register_confirmpassword_et = (EditText) findViewById(R.id.register_confirmpassword_et);
+        register_confirmpassword_et.setOnClickListener(this);
+        register_email_et = (EditText) findViewById(R.id.register_email_et);
+        register_email_et.setOnClickListener(this);
+        register_bt = (Button) findViewById(R.id.register_bt);
+        register_bt.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.register_bt:
+
+                break;
+            case R.id.register_user_et:
+
+                break;
+            case R.id.register_password_et:
+
+                break;
+            case R.id.register_confirmpassword_et:
+
+                break;
+            case R.id.register_email_et:
+                String user = register_user_et.getText().toString().trim();
+                String password = register_password_et.getText().toString().trim();
+                String confirmpassword = register_confirmpassword_et.getText().toString().trim();
+                String email = register_email_et.getText().toString().trim();
+                boolean isemail1 = isEmail(email);
+
+                if(isEmpty(user)){
+                    utils.showToast(RegisterActivity.this,getText(R.string.Account_empty),0);
+                    return;
+                }
+                if(isEmpty(password)){
+                    utils.showToast(RegisterActivity.this,getText(R.string.password_empty),0);
+                    return;
+                }
+                if(isEmpty(confirmpassword)){
+                    utils.showToast(RegisterActivity.this,getText(R.string.password_empty),0);
+                    return;
+                }
+
+                if (user.length()<6||user.length()>11){
+                    utils.showToast(RegisterActivity.this,getText(R.string.Please_enter_user),0);
+                    return;
+                }
+                if (password.length()<6||password.length()>11){
+                    utils.showToast(RegisterActivity.this,getText(R.string.Please_enter_password),0);
+                    return;
+                }
+
+                if (!validatesEqual(password, confirmpassword)){
+                    utils.showToast(RegisterActivity.this,getText(R.string.password_different),0);
+                    return;
+                }
+                if (!isemail1){
+                    utils.showToast(RegisterActivity.this,getText(R.string.mailbox_format),0);
+                    return;
+                }
+
+                break;
+        }
+    }
+    private  boolean isEmpty(String str) {
+        if (str == null || str.length() == 0 || str.equalsIgnoreCase("null") || str.isEmpty() || str.equals("")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    private  boolean validatesEqual(String str1, String str2){
+        boolean isEqual=false;
+
+        if(str1==null||str2==null){
+            isEqual=false;
+        }else if(str1.equals(str2)){
+            isEqual=true;
+        }else{
+            isEqual=false;
+        }
+
+        return isEqual;
+    }
+    public boolean isEmail(String email) {
+        String str = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
+        Pattern p = Pattern.compile(str);
+        Matcher m = p.matcher(email);
+        return m.matches();
+    }
+
+    class GetRegisterMessage implements Runnable{
+        @Override
+        public void run() {
+            Message msg = handle.obtainMessage();
+ /*           String strUserName = edUserName.getText().toString().trim();
+            String strPassWord = edPassWord.getText().toString().trim();
+            String strRequest = strUserName+"|"+strPassWord;*/
+
+ /*           String requestMessage = AESHelper.encrypt(strRequest, AppcalitaionContext.AES_PASSWORD);
+            String buyURL = AppcalitaionContext.REGISTER_URL+requestMessage;*/
+            String strResultAes = HttpUtils.doGet(/*buyURL*/"");
+            if(isEmpty(strResultAes)){
+                msg.what = 11;
+            }
+            else{
+                msg.what = 1;
+                msg.obj = strResultAes;
+            }
+            handle.sendMessage(msg);
+        }
     }
 }

@@ -19,4 +19,16 @@
     <string name="non_response">Non response</string>
     <string name="video_call">Video call</string>
     <string name="remote_control">Remote control</string>
+    <string name="Confirm">Confirm the password</string>
+    <string name="mailbox">Mailbox</string>
+    <string name="Account_empty">Account can not be empty</string>
+    <string name="password_empty">The password must not be empty</string>
+    <string name="Please_enter_user">Please enter 6-11 digit account name</string>
+    <string name="Please_enter_password">Please enter the 6-11 bit password</string>
+    <string name="password_different">The password is different from the confirmation password.</string>
+    <string name="mailbox_format">Incorrect mailbox format</string>
+    <string name="http_data_error">Data is abnormal. Please retry or contact customer service</string>
+    <string name="http_parameters_error">Abnormal parameters, please retry or contact customer service</string>
+    <string name="Account_name_exists">Account name already exists</string>
+    <string name="register_Success">register Success</string>
 </resources>
