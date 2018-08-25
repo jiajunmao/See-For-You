@@ -11,4 +11,5 @@
     <color name="titleColorSelected">#F54D33</color>
     <color name="login_color">#F6F5FA</color>
     <color name="welome_font_color">#9A9A9A</color>
+    <color name="control_color">#F4F4F4</color>
 </resources>

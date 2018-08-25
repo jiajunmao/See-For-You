@@ -22,4 +22,7 @@
     <dimen name="welcome_mag">40dp</dimen>
     <dimen name="welcomeFont_size">20dp</dimen>
     <dimen name="welcome_bt_top">80dp</dimen>
+    <dimen name="mine_mar">20dp</dimen>
+    <dimen name="mine_marleft">10dp</dimen>
+    <dimen name="control_back">20dp</dimen>
 </resources>

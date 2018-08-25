@@ -11,4 +11,12 @@
     <string name="welcome1">Don’t miss doing any good thing no</string>
     <string name="welcome2">matter how insignificant it looks</string>
     <string name="welcome">Welcome</string>
+    <string name="username">User name</string>
+    <string name="account_number">Account number</string>
+    <string name="emailbox">Mailbox</string>
+    <string name="integral">Integral</string>
+    <string name="exit">Exit account</string>
+
+    <string name="video_call">Video call</string>
+    <string name="remote_control">Remote control</string>
 </resources>
