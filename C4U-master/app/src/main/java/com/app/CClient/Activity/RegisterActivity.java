@@ -96,17 +96,17 @@ public class RegisterActivity extends Activity implements OnClickListener{
                 String password = register_password_et.getText().toString().trim();
                 String confirmpassword = register_confirmpassword_et.getText().toString().trim();
                 String email = register_email_et.getText().toString().trim();
-                boolean isemail1 = isEmail(email);
+                boolean isemail1 = utils.isEmail(email);
 
-                if(isEmpty(user)){
+                if(utils.isEmpty(user)){
                     utils.showToast(RegisterActivity.this,getText(R.string.Account_empty),0);
                     return;
                 }
-                if(isEmpty(password)){
+                if(utils.isEmpty(password)){
                     utils.showToast(RegisterActivity.this,getText(R.string.password_empty),0);
                     return;
                 }
-                if(isEmpty(confirmpassword)){
+                if(utils.isEmpty(confirmpassword)){
                     utils.showToast(RegisterActivity.this,getText(R.string.password_empty),0);
                     return;
                 }
@@ -120,7 +120,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
                     return;
                 }
 
-                if (!validatesEqual(password, confirmpassword)){
+                if (!utils.validatesEqual(password, confirmpassword)){
                     utils.showToast(RegisterActivity.this,getText(R.string.password_different),0);
                     return;
                 }
@@ -132,32 +132,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
                 break;
         }
     }
-    private  boolean isEmpty(String str) {
-        if (str == null || str.length() == 0 || str.equalsIgnoreCase("null") || str.isEmpty() || str.equals("")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    private  boolean validatesEqual(String str1, String str2){
-        boolean isEqual=false;
 
-        if(str1==null||str2==null){
-            isEqual=false;
-        }else if(str1.equals(str2)){
-            isEqual=true;
-        }else{
-            isEqual=false;
-        }
-
-        return isEqual;
-    }
-    public boolean isEmail(String email) {
-        String str = "^([a-zA-Z0-9_\\-\\.]+)@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.)|(([a-zA-Z0-9\\-]+\\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\\]?)$";
-        Pattern p = Pattern.compile(str);
-        Matcher m = p.matcher(email);
-        return m.matches();
-    }
 
     class GetRegisterMessage implements Runnable{
         @Override
@@ -170,7 +145,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
  /*           String requestMessage = AESHelper.encrypt(strRequest, AppcalitaionContext.AES_PASSWORD);
             String buyURL = AppcalitaionContext.REGISTER_URL+requestMessage;*/
             String strResultAes = HttpUtils.doGet(/*buyURL*/"");
-            if(isEmpty(strResultAes)){
+            if(utils.isEmpty(strResultAes)){
                 msg.what = 11;
             }
             else{

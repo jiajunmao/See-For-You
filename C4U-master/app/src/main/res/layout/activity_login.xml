@@ -38,6 +38,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
+            android:maxLength="11"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:id="@+id/login_user_et"
             android:hint="@string/login_user_et"
             android:background="@color/login_color"
@@ -55,6 +57,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
             <EditText
+                android:maxLength="20"
+                android:inputType="textPassword"
                 android:id="@+id/login_password_et"
                 android:hint="@string/login_password_et"
                 android:background="@color/login_color"
