@@ -16,7 +16,7 @@
     <string name="emailbox">Mailbox</string>
     <string name="integral">Integral</string>
     <string name="exit">Exit account</string>
-
+    <string name="non_response">Non response</string>
     <string name="video_call">Video call</string>
     <string name="remote_control">Remote control</string>
 </resources>

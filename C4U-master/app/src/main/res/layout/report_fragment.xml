@@ -36,5 +36,29 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/control_back">
     </LinearLayout>
-    
+<RelativeLayout
+    android:layout_marginLeft="@dimen/mine_mar"
+    android:layout_marginRight="@dimen/mine_mar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/et_all_hegiht">
+    <TextView
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Jack"
+        android:drawablePadding="@dimen/mine_marleft"
+        android:drawableLeft="@drawable/control_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/hang_up"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
