@@ -1,7 +1,13 @@
 package com.app.CClient.Utlis;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.app.CClient.fragmenttabhost.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -43,5 +49,32 @@ public class utils {
         Pattern p = Pattern.compile(str);
         Matcher m = p.matcher(email);
         return m.matches();
+    }
+    public static Dialog showDialog(Context context, String msg, final View.OnClickListener onClickListener){
+        final Dialog dialog = new Dialog(context, R.style.NobackDialog);
+
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.dialog_normal, null);
+        TextView message = (TextView) view.findViewById(R.id.message);
+        message.setText(msg);
+
+        View.OnClickListener _onClickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(onClickListener != null)
+                    onClickListener.onClick(v);
+                dialog.dismiss();
+            }
+        };
+
+        view.findViewById(R.id.dialogOk).setOnClickListener(_onClickListener);
+        view.findViewById(R.id.dialogCancel).setOnClickListener(_onClickListener);
+
+
+        dialog.setContentView(view);
+        dialog.setCanceledOnTouchOutside(true);
+        dialog.show();
+
+        return dialog;
     }
 }

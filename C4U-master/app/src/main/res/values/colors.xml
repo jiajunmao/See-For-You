@@ -15,4 +15,6 @@
     <color name="videoback">#383838</color>
     <color name="evaluation_tv">#525252</color>
     <color name="trend_color">#DADADA</color>
+    <color name="dialog_transparent_bg">#00FFFFFF</color>
+    <color name="control_press_color">#F86F2E</color>
 </resources>
