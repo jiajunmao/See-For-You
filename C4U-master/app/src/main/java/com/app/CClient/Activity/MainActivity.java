@@ -29,7 +29,12 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager mViewPager;
     private List<Fragment> mFragmentList;
     private Class mClass[] = {TrendFragment.class,ControlFragment.class,MineFragment.class};
-    private Fragment mFragment[] = {new TrendFragment(),new ControlFragment(),new MineFragment()};
+    private Fragment mFragment[];
+
+    private TrendFragment  trendFragment;
+    private ControlFragment  controlFragment;
+    private MineFragment  mineFragment;
+
     private String mTitles[] = {"Trend","Control","Mine"};
     private TextView titile_tv;
     private int mImages[] = {
@@ -56,6 +61,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        trendFragment = new TrendFragment();
+        controlFragment = new ControlFragment();
+        mineFragment = new MineFragment();
+        mFragment = new Fragment[mTitles.length];
+        mFragment[0] = trendFragment;
+        mFragment[1] = controlFragment;
+        mFragment[2] = mineFragment;
+        trendFragment.setContext(MainActivity.this);
+        controlFragment.setContext(MainActivity.this);
+        mineFragment.setContext(MainActivity.this);
         mTabHost = (FragmentTabHost) findViewById(android.R.id.tabhost);
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         titile_tv = (TextView) findViewById(R.id.titile_tv);
