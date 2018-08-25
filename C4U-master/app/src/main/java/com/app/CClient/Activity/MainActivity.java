@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTabHost;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -84,16 +85,19 @@ public class MainActivity extends AppCompatActivity {
             mTabHost.addTab(tabSpec,mClass[i],null);
             mFragmentList.add(mFragment[i]);
             mTabHost.getTabWidget().getChildAt(i).setBackgroundColor(Color.WHITE);
+            Log.e("mFragmentList","for" + i);
         }
 
         mViewPager.setAdapter(new FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public Fragment getItem(int position) {
+                Log.e("mFragmentList","getItem" + position);
                 return mFragmentList.get(position);
             }
 
             @Override
             public int getCount() {
+                Log.e("mFragmentList","size" +mFragmentList.size());
                 return mFragmentList.size();
             }
         });
@@ -116,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabChanged(String tabId) {
                 mViewPager.setCurrentItem(mTabHost.getCurrentTab());
+                Log.e("mFragmentList","getCurrentTab" +mTabHost.getCurrentTab());
             }
         });
 
@@ -129,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 mTabHost.setCurrentTab(position);
                 titile_tv.setText(mTitles[position]);
+                Log.e("mFragmentList","onPageSelected" +position);
             }
 
             @Override
