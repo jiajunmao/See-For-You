@@ -31,4 +31,6 @@
     <string name="http_parameters_error">Abnormal parameters, please retry or contact customer service</string>
     <string name="Account_name_exists">Account name already exists</string>
     <string name="register_Success">register Success</string>
+    <string name="visually_impaired">Visually impaired</string>
+    <string name="evaluation">Evaluation to integral</string>
 </resources>

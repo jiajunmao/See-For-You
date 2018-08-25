@@ -39,8 +39,9 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.NoTitleBar">
         <activity
-            android:name="com.app.CClient.Activity.MainActivity"
+            android:name="com.app.CClient.Activity.WelcomeActivity"
             android:label="@string/app_name"
+            android:configChanges="screenSize|keyboardHidden|orientation"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,18 +50,19 @@
             </intent-filter>
         </activity>
         <activity android:name="com.app.CClient.Activity.LoginActivity"
-
+            android:configChanges="screenSize|keyboardHidden|orientation"
             >
         </activity>
         <activity android:name="com.app.CClient.Activity.VideoCallsActivity"
-
+            android:configChanges="screenSize|keyboardHidden|orientation"
             ></activity>
         <activity android:name="com.app.CClient.Activity.RegisterActivity"
-
+            android:configChanges="screenSize|keyboardHidden|orientation"
             ></activity>
-        <activity android:name="com.app.CClient.Activity.Welcome"
-
-            ></activity>
+      <activity android:name="com.app.CClient.Activity.MainActivity"
+          android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+          android:configChanges="screenSize|keyboardHidden|orientation"
+          ></activity>
     </application>
 
 </manifest>

@@ -5,23 +5,23 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
-import com.app.CClient.Utlis.AESHelper;
+import com.app.CClient.Utlis.EditTextChecker;
+import com.app.CClient.Utlis.EditTextStyle;
 import com.app.CClient.Utlis.HttpUtils;
 import com.app.CClient.Utlis.utils;
 import com.app.CClient.fragmenttabhost.R;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class RegisterActivity extends Activity implements OnClickListener{
     private EditText register_user_et,register_password_et,register_confirmpassword_et,register_email_et;
     private Button register_bt;
+    private EditTextChecker pwdTextChecker;
     private Handler handle = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -65,33 +65,24 @@ public class RegisterActivity extends Activity implements OnClickListener{
     }
     private void initview(){
         register_user_et = (EditText) findViewById(R.id.register_user_et);
-        register_user_et.setOnClickListener(this);
         register_password_et = (EditText) findViewById(R.id.register_password_et);
-        register_password_et.setOnClickListener(this);
         register_confirmpassword_et = (EditText) findViewById(R.id.register_confirmpassword_et);
-        register_confirmpassword_et.setOnClickListener(this);
         register_email_et = (EditText) findViewById(R.id.register_email_et);
-        register_email_et.setOnClickListener(this);
         register_bt = (Button) findViewById(R.id.register_bt);
         register_bt.setOnClickListener(this);
+        pwdTextChecker = new EditTextChecker(this);
+        pwdTextChecker.addCheckTask(register_user_et,EditTextStyle.BOUND.getEntity(6,11),R.string.Please_enter_user);
+        pwdTextChecker.addCheckTask(register_password_et, EditTextStyle.BOUND.getEntity(6,11),R.string.Please_enter_password);
+        pwdTextChecker.addCheckTask(register_confirmpassword_et, EditTextStyle.BOUND.getEntity(6,11),R.string.Please_enter_password);
+        pwdTextChecker.addCheckTask(register_password_et, EditTextStyle.EQUAL.getEntity(register_confirmpassword_et),R.string.password_different);
+        pwdTextChecker.addCheckTask(register_email_et,EditTextStyle.EMAIL,R.string.mailbox_format);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+
             case R.id.register_bt:
-
-                break;
-            case R.id.register_user_et:
-
-                break;
-            case R.id.register_password_et:
-
-                break;
-            case R.id.register_confirmpassword_et:
-
-                break;
-            case R.id.register_email_et:
                 String user = register_user_et.getText().toString().trim();
                 String password = register_password_et.getText().toString().trim();
                 String confirmpassword = register_confirmpassword_et.getText().toString().trim();
@@ -128,7 +119,12 @@ public class RegisterActivity extends Activity implements OnClickListener{
                     utils.showToast(RegisterActivity.this,getText(R.string.mailbox_format),0);
                     return;
                 }
-
+           /*      if (!pwdTextChecker.check()){
+                     Log.e("pwdTextChecker","1");
+                     return;
+                 }*/
+                Log.e("pwdTextChecker","2");
+                 finish();
                 break;
         }
     }

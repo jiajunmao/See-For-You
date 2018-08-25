@@ -100,7 +100,7 @@
         android:layout_marginTop="@dimen/welcome_bt_top"
         android:layout_marginRight="@dimen/login_mar"
         android:layout_marginLeft="@dimen/login_mar"
-        android:id="@+id/login_bt"
+        android:id="@+id/welcome_bt"
         android:textColor="@color/allwhite"
         android:text="@string/welcome"
         android:background="@drawable/press_button"

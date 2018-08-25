@@ -65,16 +65,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
-        <Button
-            android:id="@+id/register_bt"
+        <com.app.CClient.view.RippleLinearLayout
+            android:gravity="center"
             android:layout_gravity="right"
+            android:id="@+id/register_bt"
+            android:background="@drawable/register"
             android:layout_marginTop="@dimen/registerbttop"
+            android:layout_width="@dimen/register_w"
+            android:layout_height="@dimen/register_h">
+        <TextView
             android:textSize="@dimen/register_size"
             android:textColor="@color/allcolor_bt"
             android:text="@string/register"
-            android:background="@drawable/register"
-            android:layout_width="@dimen/register_w"
-            android:layout_height="@dimen/register_h" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.app.CClient.view.RippleLinearLayout>
     </LinearLayout>
 
     <Button

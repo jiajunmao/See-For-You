@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="Font_size">16dp</dimen>
+    <dimen name="Font_size">17dp</dimen>
     <dimen name="login_ivtop">15dp</dimen>
     <dimen name="login_mar">40dp</dimen>
     <dimen name="cirular_bead_value">8dp</dimen>
@@ -25,4 +25,6 @@
     <dimen name="mine_mar">20dp</dimen>
     <dimen name="mine_marleft">10dp</dimen>
     <dimen name="control_back">20dp</dimen>
+    <dimen name="hand_marg">15dp</dimen>
+    <dimen name="hand_margRight">35dp</dimen>
 </resources>
