@@ -16,7 +16,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.wzh.tab.R;
+
+import com.app.CClient.fragmenttabhost.R;
 
 import java.util.List;
 
@@ -58,7 +59,7 @@ public class BottomTabBar extends LinearLayout {
 
     public BottomTabBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray typedArray = getContext().obtainStyledAttributes(attrs,R.styleable.BottomTabBar);
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.BottomTabBar);
         textColor = typedArray.getColor(R.styleable.BottomTabBar_textColor, Color.parseColor("#666666"));
         textSelectColor = typedArray.getColor(R.styleable.BottomTabBar_textSelectColor, Color.parseColor("#666666"));
         backgroundColor = typedArray.getColor(R.styleable.BottomTabBar_backgroundColor, Color.parseColor("#e9e9e9"));
