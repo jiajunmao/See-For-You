@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context="com.app.CClient.Activity.MainActivity">
@@ -22,6 +23,13 @@
                android:layout_height="wrap_content" />
        </RelativeLayout>
 
-    <include layout="@layout/content_main" />
-
+<!--    <include layout="@layout/content_main" />-->
+<com.app.CClient.tab.BottomTabBar
+    android:id="@+id/tb"
+    app:textSelectColor="@color/allcolor"
+    app:backgroundColor="@color/allwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+</com.app.CClient.tab.BottomTabBar>
+    <!--  app:textColor="@color/font_color"-->
 </LinearLayout>

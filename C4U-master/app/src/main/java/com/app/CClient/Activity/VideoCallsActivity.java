@@ -6,11 +6,10 @@ import android.support.annotation.Nullable;
 
 import com.app.CClient.fragmenttabhost.R;
 
-public class Welcome extends Activity {
+public class VideoCallsActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
-
+        setContentView(R.layout.activitycalls);
     }
 }

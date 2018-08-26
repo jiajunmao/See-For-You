@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:gravity="center"
+    android:background="@color/allwhite"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+ <LinearLayout
+     android:layout_marginTop="@dimen/login_mar"
+     android:orientation="horizontal"
+     android:layout_marginLeft="@dimen/login_mar"
+     android:layout_marginRight="@dimen/login_mar"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/call_tv"
+         android:gravity="center"
+         android:drawableTop="@drawable/video_call_press_button"
+         android:textColor="@color/Font_color"
+         android:textSize="@dimen/Font_size"
+         android:text="@string/video_call"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+
+     <TextView
+         android:gravity="center"
+         android:drawableTop="@drawable/remote_control_press_button"
+         android:textColor="@color/Font_color"
+         android:textSize="@dimen/Font_size"
+         android:text="@string/remote_control"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="wrap_content" />
+ </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/welcome_magtop"
+        android:background="@color/control_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/control_back">
+    </LinearLayout>
+<RelativeLayout
+    android:layout_marginLeft="@dimen/mine_mar"
+    android:layout_marginRight="@dimen/mine_mar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/et_all_hegiht">
     <TextView
-        android:text="control Fragment"
-        android:textSize="24sp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Jack"
+        android:drawablePadding="@dimen/mine_marleft"
+        android:drawableLeft="@drawable/control_user"
         android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:src="@drawable/hang_up"
         android:layout_height="wrap_content" />
-
-
+</RelativeLayout>
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

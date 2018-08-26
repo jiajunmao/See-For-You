@@ -32,12 +32,14 @@
         <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-            android:layout_height="@dimen/et_all_hegiht">
+            android:layout_height="wrap_content">
         <ImageView
             android:src="@drawable/loginuser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
+            android:maxLength="11"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
             android:id="@+id/login_user_et"
             android:hint="@string/login_user_et"
             android:background="@color/login_color"
@@ -49,28 +51,35 @@
             android:layout_marginTop="@dimen/login_password_top"
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/et_all_hegiht">
+            android:layout_height="wrap_content">
             <ImageView
                 android:src="@drawable/loginpassword"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
             <EditText
+                android:maxLength="20"
+                android:inputType="textPassword"
                 android:id="@+id/login_password_et"
                 android:hint="@string/login_password_et"
                 android:background="@color/login_color"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </LinearLayout>
-        <Button
-            android:id="@+id/register_bt"
+        <com.app.CClient.view.RippleLinearLayout
+            android:gravity="center"
             android:layout_gravity="right"
+            android:id="@+id/register_bt"
+            android:background="@drawable/register"
             android:layout_marginTop="@dimen/registerbttop"
+            android:layout_width="@dimen/register_w"
+            android:layout_height="@dimen/register_h">
+        <TextView
             android:textSize="@dimen/register_size"
             android:textColor="@color/allcolor_bt"
             android:text="@string/register"
-            android:background="@drawable/register"
-            android:layout_width="@dimen/register_w"
-            android:layout_height="@dimen/register_h" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.app.CClient.view.RippleLinearLayout>
     </LinearLayout>
 
     <Button

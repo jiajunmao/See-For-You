@@ -11,4 +11,10 @@
     <color name="titleColorSelected">#F54D33</color>
     <color name="login_color">#F6F5FA</color>
     <color name="welome_font_color">#9A9A9A</color>
+    <color name="control_color">#F4F4F4</color>
+    <color name="videoback">#383838</color>
+    <color name="evaluation_tv">#525252</color>
+    <color name="trend_color">#DADADA</color>
+    <color name="dialog_transparent_bg">#00FFFFFF</color>
+    <color name="control_press_color">#F86F2E</color>
 </resources>
