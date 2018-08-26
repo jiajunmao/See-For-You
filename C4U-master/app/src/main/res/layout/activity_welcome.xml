@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/allwhite"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/allcolor">
+        <TextView
+            android:id="@+id/titile_tv"
+            android:textColor="@color/allwhite"
+            android:textSize="@dimen/Font_size"
+            android:text="C4U"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/welcome_mag"
+        android:layout_marginLeft="@dimen/welcome_mag"
+        android:layout_marginTop="@dimen/welcome_magtop"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+               android:textSize="@dimen/welcomeFont_size"
+                android:textColor="@color/allcolor"
+                android:text="95,618"
+                android:id="@+id/blind_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/welcomeFont_size"
+                android:text="Blind"
+                android:textColor="@color/welome_font_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/welcomeFont_size"
+                android:textColor="@color/allcolor"
+                android:text="1,126,618"
+                android:id="@+id/volunteer_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/welcomeFont_size"
+                android:text="Volunteer"
+                android:textColor="@color/welome_font_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginTop="@dimen/welcome_magtop"
+        android:layout_gravity="center"
+        android:src="@drawable/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="@dimen/welcome_magtop"
+        android:layout_marginRight="@dimen/welcome_mag"
+        android:layout_marginLeft="@dimen/welcome_mag"
+        android:text="@string/welcome1"
+        android:textSize="@dimen/welcomeFont_size"
+        android:textColor="@color/welome_font_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginRight="@dimen/welcome_mag"
+        android:layout_marginLeft="@dimen/welcome_mag"
+        android:text="@string/welcome2"
+        android:textSize="@dimen/welcomeFont_size"
+        android:textColor="@color/welome_font_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="@dimen/welcome_bt_top"
+        android:layout_marginRight="@dimen/login_mar"
+        android:layout_marginLeft="@dimen/login_mar"
+        android:id="@+id/login_bt"
+        android:textColor="@color/allwhite"
+        android:text="@string/welcome"
+        android:background="@drawable/press_button"
+        android:textSize="@dimen/Font_size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_all_height" />
+</LinearLayout>
