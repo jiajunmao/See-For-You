@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/allwhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/allcolor">
+        <TextView
+            android:id="@+id/titile_tv"
+            android:textColor="@color/allwhite"
+            android:textSize="@dimen/Font_size"
+            android:text="@string/login"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_marginTop="@dimen/login_ivtop"
+        android:layout_gravity="center"
+        android:src="@drawable/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="@dimen/login_mar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/loginuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:maxLength="11"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:id="@+id/login_user_et"
+            android:hint="@string/login_user_et"
+            android:background="@color/login_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/login_password_top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/loginpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <EditText
+                android:maxLength="20"
+                android:inputType="textPassword"
+                android:id="@+id/login_password_et"
+                android:hint="@string/login_password_et"
+                android:background="@color/login_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <com.app.CClient.view.RippleLinearLayout
+            android:gravity="center"
+            android:layout_gravity="right"
+            android:id="@+id/register_bt"
+            android:background="@drawable/register"
+            android:layout_marginTop="@dimen/registerbttop"
+            android:layout_width="@dimen/register_w"
+            android:layout_height="@dimen/register_h">
+        <TextView
+            android:textSize="@dimen/register_size"
+            android:textColor="@color/allcolor_bt"
+            android:text="@string/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.app.CClient.view.RippleLinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="@dimen/login_mar"
+        android:id="@+id/login_bt"
+        android:layout_marginTop="@dimen/login_bt_top"
+        android:textColor="@color/allwhite"
+        android:text="@string/login"
+        android:background="@drawable/press_button"
+        android:textSize="@dimen/Font_size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bt_all_height" />
+</LinearLayout>
