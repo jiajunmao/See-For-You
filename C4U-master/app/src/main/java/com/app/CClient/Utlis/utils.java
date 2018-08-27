@@ -11,7 +11,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lclient.Main.R;
+
+import com.app.CClient.fragmenttabhost.R;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -93,34 +94,6 @@ public class utils {
 
         return dialog;
     }
-    public static Dialog showProgress(Context context){
-        if(context instanceof Activity){
-            return showProgress(context,null);
-        }
-        return null;
-    }
-    public static Dialog showProgress(Context context, String supplementStr){
-        showProgressdialog = new Dialog(context, R.style.NobackDialog);
 
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.dialog_progress, null);
-        TextView supplement = (TextView) view.findViewById(R.id.supplement);
-        if(supplementStr != null){
-            supplement.setText(supplementStr);
-        }
 
-        int width = ViewGroup.LayoutParams.MATCH_PARENT;
-        if(context instanceof Activity){
-            Display display = ((Activity)context).getWindowManager().getDefaultDisplay();
-            width = display.getWidth();
-        }
-
-        showProgressdialog.setContentView(view,new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.WRAP_CONTENT));
-        showProgressdialog.setCanceledOnTouchOutside(true);
-        if (!showProgressdialog.isShowing() && context!=null) {
-            showProgressdialog.show();
-        }
-
-        return showProgressdialog;
-    }
 }
