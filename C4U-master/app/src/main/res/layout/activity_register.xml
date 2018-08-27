@@ -102,6 +102,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
         </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/login_password_top"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/et_all_hegiht">
+            <EditText
+                android:textColor="@color/Font_color"
+                android:textColorHint="@color/Font_color"
+                android:paddingLeft="@dimen/et_padd"
+                android:background="@color/login_color"
+                android:id="@+id/register_phone_et"
+                android:hint="@string/Phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_marginLeft="@dimen/register_iv"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_account"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
     </LinearLayout>
     <Button
         android:layout_margin="@dimen/login_mar"

@@ -19,9 +19,10 @@ import com.app.CClient.fragmenttabhost.R;
 
 
 public class RegisterActivity extends Activity implements OnClickListener{
-    private EditText register_user_et,register_password_et,register_confirmpassword_et,register_email_et;
+    private EditText register_user_et,register_password_et,register_confirmpassword_et,register_email_et,register_phone_et;
     private Button register_bt;
     private EditTextChecker pwdTextChecker;
+    private String register_phone = "";
     private Handler handle = new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -69,6 +70,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
         register_confirmpassword_et = (EditText) findViewById(R.id.register_confirmpassword_et);
         register_email_et = (EditText) findViewById(R.id.register_email_et);
         register_bt = (Button) findViewById(R.id.register_bt);
+        register_phone_et = (EditText) findViewById(R.id.register_phone_et);
         register_bt.setOnClickListener(this);
         pwdTextChecker = new EditTextChecker(this);
         pwdTextChecker.addCheckTask(register_user_et,EditTextStyle.BOUND.getEntity(6,11),R.string.Please_enter_user);

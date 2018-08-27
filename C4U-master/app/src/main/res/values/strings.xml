@@ -35,4 +35,6 @@
     <string name="evaluation">Evaluation to integral</string>
     <string name="use_methods_and_rules">Use methods and rules</string>
     <string name="dialog_msg">You have a new request for help</string>
+    <string name="Phone_number">Phone number</string>
+    <string name="Phone_number_error">Please enter the correct cell phone number.</string>
 </resources>
