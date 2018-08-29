@@ -16,7 +16,9 @@ import com.app.CClient.Utlis.EditTextStyle;
 import com.app.CClient.Utlis.HttpUtils;
 import com.app.CClient.Utlis.utils;
 import com.app.CClient.fragmenttabhost.R;
-
+/*
+*
+* */
 
 public class RegisterActivity extends Activity implements OnClickListener{
     private EditText register_user_et,register_password_et,register_confirmpassword_et,register_email_et,register_phone_et;
