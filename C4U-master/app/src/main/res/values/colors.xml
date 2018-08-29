@@ -17,4 +17,9 @@
     <color name="trend_color">#DADADA</color>
     <color name="dialog_transparent_bg">#00FFFFFF</color>
     <color name="control_press_color">#F86F2E</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="transblack">#80000000</color>
+    <color name="transwhite">#80ffffff</color>
+    <color name="transyellow">#bbffdd00</color>
 </resources>
