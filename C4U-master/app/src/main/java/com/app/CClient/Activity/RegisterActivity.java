@@ -18,6 +18,8 @@ import com.app.CClient.Utlis.utils;
 import com.app.CClient.fragmenttabhost.R;
 /*
 *
+*
+*
 * */
 
 public class RegisterActivity extends Activity implements OnClickListener{
@@ -33,9 +35,6 @@ public class RegisterActivity extends Activity implements OnClickListener{
                 utils.showToast(RegisterActivity.this,getText(R.string.http_data_error),0);
             }
             if(msg.what == 1){
-                //Parameter error returns error
-                //User name repeatedly returned no
-                //registerSuccess ok
 
                 String strResult = (String)msg.obj;
                 String resultReal = /*AESHelper.decrypt(strResult, AppcalitaionContext.AES_PASSWORD)*/"";
@@ -123,10 +122,7 @@ public class RegisterActivity extends Activity implements OnClickListener{
                     utils.showToast(RegisterActivity.this,getText(R.string.mailbox_format),0);
                     return;
                 }
-           /*      if (!pwdTextChecker.check()){
-                     Log.e("pwdTextChecker","1");
-                     return;
-                 }*/
+
                 Log.e("pwdTextChecker","2");
                  finish();
                 break;
