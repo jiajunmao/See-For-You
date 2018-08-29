@@ -1,8 +1,6 @@
 package com.app.CClient.Bean;
 /***
  * 用户通信记录model
- * @author Administrator
- *
  */
 public class PhoneLogs {
 

@@ -22,7 +22,9 @@ public class WelcomeActivity extends Activity implements View.OnClickListener {
         welcome_bt.setOnClickListener(this);
 
     }
+private void init(){
 
+}
     @Override
     public void onClick(View v) {
         switch (v.getId()){
