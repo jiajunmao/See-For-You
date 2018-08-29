@@ -37,4 +37,7 @@
     <string name="dialog_msg">You have a new request for help</string>
     <string name="Phone_number">Phone number</string>
     <string name="Phone_number_error">Please enter the correct cell phone number.</string>
+    <string name="setting_t1">5min</string>
+    <string name="setting_t2">3min</string>
+    <string name="setting_t3">1min</string>
 </resources>
