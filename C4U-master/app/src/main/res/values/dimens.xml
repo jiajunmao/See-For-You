@@ -29,4 +29,11 @@
     <dimen name="hand_margRight">35dp</dimen>
     <dimen name="cirular_bead">5dp</dimen>
     <dimen name="image_height">20dp</dimen>
+
+
+    <dimen name="recordtime_text_size">20sp</dimen>
+    <dimen name="bottombar_text_size">12sp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
 </resources>
