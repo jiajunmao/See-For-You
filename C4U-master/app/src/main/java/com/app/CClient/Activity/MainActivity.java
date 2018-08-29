@@ -4,7 +4,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.widget.TextView;
-
 import com.app.CClient.fragmenttabhost.R;
 import com.app.CClient.fragmenttabhost.TrendFragment;
 import com.app.CClient.fragmenttabhost.MineFragment;
