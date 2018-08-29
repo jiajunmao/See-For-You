@@ -11,6 +11,8 @@ import com.app.CClient.fragmenttabhost.R;
 
 /**
  * Created by jiapeng on 2017/9/1.
+ *
+ * //
  */
 
 public class BaseActivity extends AppCompatActivity {
