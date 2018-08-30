@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:background="@drawable/control_dialog">
+
+    <TextView
+        android:gravity="bottom|center"
+        android:textColor="@color/videoback"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:text="You have a new request for help"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5"
+        android:textSize="@dimen/Font_size"
+        android:id="@+id/message" />
+   <ImageView
+       android:id="@+id/iv"
+       android:scaleType="fitXY"
+       android:layout_below="@+id/message"
+       android:src="@drawable/view"
+       android:layout_width="match_parent"
+       android:layout_weight="0.2"
+       android:layout_height="0dp" />
+    <LinearLayout
+        android:gravity="center"
+        android:layout_below="@+id/iv"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    <LinearLayout
+        android:background="@drawable/dialog_shape"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_weight="1">
+        <Button
+            android:text="YES"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dialogCancel"
+            android:textSize="@dimen/Font_size"
+            android:textColor="@drawable/dialog_font"
+            android:background="@drawable/control_press_button"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+        <LinearLayout
+            android:background="@drawable/dialog_shape"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1">
+        <Button
+            android:text="NO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dialogOk"
+            android:textSize="@dimen/Font_size"
+            android:textColor="@drawable/dialog_font"
+            android:background="@drawable/control_press_button" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

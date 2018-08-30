@@ -1,0 +1,39 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="Font_size">17dp</dimen>
+    <dimen name="login_ivtop">15dp</dimen>
+    <dimen name="login_mar">40dp</dimen>
+    <dimen name="cirular_bead_value">8dp</dimen>
+    <dimen name="login_password_top">15dp</dimen>
+    <dimen name="login_bt_top">55dp</dimen>
+    <dimen name="register_size">10dp</dimen>
+    <dimen name="registerbttop">7dp</dimen>
+    <dimen name="register_w">60dp</dimen>
+    <dimen name="register_h">25dp</dimen>
+    <dimen name="register_martop">80dp</dimen>
+    <dimen name="et_all_hegiht">50dp</dimen>
+    <dimen name="bt_all_height">50dp</dimen>
+    <dimen name="et_padd">30dp</dimen>
+    <dimen name="register_iv">10dp</dimen>
+    <dimen name="welcome_magtop">30dp</dimen>
+    <dimen name="welcome_mag">40dp</dimen>
+    <dimen name="welcomeFont_size">20dp</dimen>
+    <dimen name="welcome_bt_top">80dp</dimen>
+    <dimen name="mine_mar">20dp</dimen>
+    <dimen name="mine_marleft">10dp</dimen>
+    <dimen name="control_back">20dp</dimen>
+    <dimen name="hand_marg">15dp</dimen>
+    <dimen name="hand_margRight">35dp</dimen>
+    <dimen name="cirular_bead">5dp</dimen>
+    <dimen name="image_height">20dp</dimen>
+
+
+    <dimen name="recordtime_text_size">20sp</dimen>
+    <dimen name="bottombar_text_size">12sp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="small_text_size">14sp</dimen>
+</resources>
