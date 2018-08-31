@@ -1,16 +1,14 @@
 package com.app.CClient.Tool;
 
-import com.yajie.smartlock.R;
+
+import com.app.CClient.fragmenttabhost.R;
 
 /**
  * 用户角色
  * Created by jiapeng on 2017/9/13.
  */
 
-public enum UserRole {
-    SUPER_ADMIN((byte)0, R.string.super_admin),
-    ADMIN((byte)1,R.string.admin),
-    NORMAL_USER((byte)2,R.string.normal_user);
+ class UserRole {
 
     public int nameResId;
     public byte type;
@@ -28,7 +26,4 @@ public enum UserRole {
         return type;
     }
 
-    public static UserRole getRole(int value){
-        return UserRole.values()[value];
-    }
 }
