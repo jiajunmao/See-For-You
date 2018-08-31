@@ -91,4 +91,10 @@ public class Constants
    public static final String NUM2 = "num";
    public static final String DELAY2 = "delay";
 
+   public static final String CONTRAS = "M_CTS";
+   public static final String WIFI_PARA = "Wifi_Param";
+   public static final String WIFI_SSI = "ssid";
+   public static final String WIFI_PASSWOR = "pass_phrase";
+
+
 }
