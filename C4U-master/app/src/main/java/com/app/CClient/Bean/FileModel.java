@@ -5,7 +5,16 @@ public class FileModel {
 	private String fileName;
 	private String fileLength;
 	private String fileFlag;
-	
+
+	public int getFiletype() {
+		return filetype;
+	}
+
+	public void setFiletype(int filetype) {
+		this.filetype = filetype;
+	}
+
+	private int filetype;
 	
 	public String getFileName() {
 		return fileName;
