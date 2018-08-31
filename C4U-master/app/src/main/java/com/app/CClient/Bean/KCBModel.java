@@ -17,6 +17,15 @@ public class KCBModel {
 	//周六至周日结束时间
 	private String ssEndTime;
 
+	public String getStarttime() {
+		return starttime;
+	}
+
+	public void setStarttime(String starttime) {
+		this.starttime = starttime;
+	}
+
+	private String starttime;
 	public String getTimeName() {
 		return timeName;
 	}
