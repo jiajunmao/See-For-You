@@ -10,7 +10,16 @@ public class UserMessage {
 	private String name;
 	/**手机IMEI码*/
 	private String phoneIMEI;
-	
+
+	public String getCoder() {
+		return coder;
+	}
+
+	public void setCoder(String coder) {
+		this.coder = coder;
+	}
+
+	private String coder;
 	/**系统版本*/
 	private String sysVersion;
 
