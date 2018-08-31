@@ -33,7 +33,8 @@ public class Constants
     public static final String RESULT = "RESULT";
     public static final String CONFIGFILE = "cachevalue";
     public static final String SETUP_TYPE = "setup_type";
-
+    public static final String CONFIGFIL = "cachevalue";
+    public static final String SETUP_TYP = "setup_type";
     public static final String PHRASE = "phrase";
     public static final String WHITE_BALANCE = "M_AWB";
     public static final String EXPOSURE = "M_AE";
