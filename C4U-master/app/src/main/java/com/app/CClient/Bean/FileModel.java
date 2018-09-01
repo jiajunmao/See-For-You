@@ -6,6 +6,15 @@ public class FileModel {
 	private String fileLength;
 	private String fileFlag;
 
+	public String getFiletime() {
+		return filetime;
+	}
+
+	public void setFiletime(String filetime) {
+		this.filetime = filetime;
+	}
+
+	private String filetime;
 	public int getFiletype() {
 		return filetype;
 	}
