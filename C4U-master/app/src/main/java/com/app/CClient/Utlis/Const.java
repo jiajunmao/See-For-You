@@ -10,4 +10,7 @@ public class Const {
     public static String ADDRESS = "";//地址
     public static int add = 0;
     public  static int msg = 0;
+
+    public static int addres = 0;
+    public  static int rtmp = 0;
 }

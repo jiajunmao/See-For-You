@@ -10,6 +10,16 @@ public class WifiBean
     private String password;
     private int type;
 
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    private String path;
+
 
     public String getName()
     {

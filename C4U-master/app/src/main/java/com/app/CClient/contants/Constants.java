@@ -33,7 +33,8 @@ public class Constants
     public static final String RESULT = "RESULT";
     public static final String CONFIGFILE = "cachevalue";
     public static final String SETUP_TYPE = "setup_type";
-
+    public static final String CONFIGFIL = "cachevalue";
+    public static final String SETUP_TYP = "setup_type";
     public static final String PHRASE = "phrase";
     public static final String WHITE_BALANCE = "M_AWB";
     public static final String EXPOSURE = "M_AE";
@@ -84,5 +85,17 @@ public class Constants
     public static final String SECOND = "SECOND";
    public static final String SPS_FRAME="674d001fe5402802d880";
    public static final String PPS_FRAME="68ee3112";
+
+   public static final String FTP_UPLOAD_SUCCESS2 = "FTP_UPLOAD_SUCCESS";
+   public static final String FTP_UPLOAD_FAIL2 = "FTP_UPLOAD_FAIL";
+   public static final String FTP_UPLOAD_LOADING2 = "FTP_UPLOAD_LOADING";
+   public static final String NUM2 = "num";
+   public static final String DELAY2 = "delay";
+
+   public static final String CONTRAS = "M_CTS";
+   public static final String WIFI_PARA = "Wifi_Param";
+   public static final String WIFI_SSI = "ssid";
+   public static final String WIFI_PASSWOR = "pass_phrase";
+
 
 }

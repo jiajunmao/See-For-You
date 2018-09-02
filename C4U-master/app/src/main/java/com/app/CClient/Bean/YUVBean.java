@@ -18,6 +18,15 @@ public class YUVBean {
     private boolean isEnableSoftCodec;
     private boolean isFrontCamera;
 
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
+
+    private String path;
     public String getPicPath() {
         return picPath;
     }
