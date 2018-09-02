@@ -18,6 +18,6 @@ public class VideoRect {
         this.startSec = startSec;
         this.stopH = stopH;
         this.stopMin = stopMin;
-        this.stopSec = stopSec;
+  
     }
 }
