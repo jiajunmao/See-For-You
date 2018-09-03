@@ -20,9 +20,18 @@ import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
  */
 
 public class FileUtil {
+    public String getFiletype() {
+        return filetype;
+    }
+
+    public void setFiletype(String filetype) {
+        this.filetype = filetype;
+    }
+
     /**
      * save image to sdcard path: Pictures/MyTestImage/
      */
+    private String filetype;
     public static void saveYuvToSdCardStorage(byte[] imageData) {
         File imageFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
         if (imageFile == null) {
