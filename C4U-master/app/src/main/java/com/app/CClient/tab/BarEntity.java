@@ -19,6 +19,15 @@ public class BarEntity {
      */
     private int tabUnSelectedResId ;
 
+    public int getSelecttype() {
+        return selecttype;
+    }
+
+    public void setSelecttype(int selecttype) {
+        this.selecttype = selecttype;
+    }
+
+    private int selecttype;
     public BarEntity(String tabText, int tabSelectedResId, int tabUnSelectedResId) {
         this.tabText = tabText;
         this.tabSelectedResId = tabSelectedResId;
