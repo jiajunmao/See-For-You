@@ -13,7 +13,7 @@ public class RemotePassword {
     private static final int STATE_NOT_PASSWORD = 0;
     private static final int STATE_ERROR_PASSWORD = 1;
     private static final int STATE_RIGHT_PASSWORD = 2;
-
+    private static final int STATE_CHECD_PASSWORD = 3;
 
     private SharedPreferences sp;
     private String serial;
