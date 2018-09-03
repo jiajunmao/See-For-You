@@ -5,6 +5,15 @@ public class TimeZoneBean {
     public int value;
     public String data;
 
+    public int getTimes() {
+        return times;
+    }
+
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
+    public  int times;
     public TimeZoneBean(String name) {
         this.name = name;
     }
