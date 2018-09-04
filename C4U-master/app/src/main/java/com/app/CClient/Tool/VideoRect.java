@@ -11,7 +11,7 @@ public class VideoRect {
     public int stopH;
     public int stopMin;
     public int stopSec;
-
+    public int startvideo;
     public VideoRect(int startH, int startMin, int startSec, int stopH, int stopMin, int stopSec) {
         this.startH = startH;
         this.startMin = startMin;
