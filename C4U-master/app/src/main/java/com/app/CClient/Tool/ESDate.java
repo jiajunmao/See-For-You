@@ -6,6 +6,15 @@ public class ESDate {
     public int month;
     public int day;
 
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public int time;
     public String getType() {
         return type;
     }
