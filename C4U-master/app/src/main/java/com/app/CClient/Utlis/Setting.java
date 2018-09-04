@@ -12,7 +12,7 @@ public class Setting {
 	public boolean isLocked;
 	public int mTimeLong;
 	public int mQuality;
-
+    private String rtmp_start;
 	public Setting(Context context) {
 		mSharedPreferences = context.getSharedPreferences("Preferences",
 				Context.MODE_PRIVATE);
