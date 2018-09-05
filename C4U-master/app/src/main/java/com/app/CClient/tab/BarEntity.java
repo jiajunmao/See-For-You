@@ -19,6 +19,15 @@ public class BarEntity {
      */
     private int tabUnSelectedResId ;
 
+    public int getTabtype() {
+        return tabtype;
+    }
+
+    public void setTabtype(int tabtype) {
+        this.tabtype = tabtype;
+    }
+
+    private int tabtype;
     public int getSelecttype() {
         return selecttype;
     }
