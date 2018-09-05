@@ -7,6 +7,7 @@ import java.util.List;
  */
 
 public class HotelUtils {
+    private int utilsset;
     public static <D> boolean isEmpty(List<D> list) {
         return list == null || list.isEmpty();
     }
