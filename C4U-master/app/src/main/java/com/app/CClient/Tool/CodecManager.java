@@ -54,10 +54,7 @@ public class CodecManager {
 		public Integer[] formats;
 	}
 
-	/**
-	 * Lists all encoders that claim to support a color format that we know how to use.
-	 * @return A list of those encoders
-	 */
+
 	@SuppressLint("NewApi")
 	public synchronized static Codec[] findEncodersForMimeType(String mimeType) {
 		if (sEncoders != null) return sEncoders;
