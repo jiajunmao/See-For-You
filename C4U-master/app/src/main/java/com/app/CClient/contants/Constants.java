@@ -77,6 +77,7 @@ public class Constants
     public static final String FTP_DELETEFILE_SUCCESS = "FTP_DELETEFILE_SUCCESS";
     public static final String FTP_DELETEFILE_FAIL = "FTP_DELETEFILE_FAIL";
     public static final String YEA = "YEAR";
+    public static final String YEA2 = "YEAR";
     public static final String MONT= "MONTH";
     public static final String YEAR = "YEAR";
     public static final String MONTH = "MONTH";
