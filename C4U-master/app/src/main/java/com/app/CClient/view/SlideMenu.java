@@ -32,7 +32,7 @@ public class SlideMenu extends ViewGroup {
 	public int mTouchState = TOUCH_STATE_REST;
 	private boolean mLocked;
 	private boolean mAllowLongPress;
-
+    private int top = 1;
 	public SlideMenu(Context context) {
 		this(context, null, 0);
 	}
