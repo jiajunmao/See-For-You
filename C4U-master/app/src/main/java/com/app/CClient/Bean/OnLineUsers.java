@@ -21,6 +21,16 @@ public class OnLineUsers {
 	private String strNetState;
 	/**手机备注或者号码*/
 	private String strState;
+
+	public String getPhonetype() {
+		return phonetype;
+	}
+
+	public void setPhonetype(String phonetype) {
+		this.phonetype = phonetype;
+	}
+
+	private String phonetype;
 	public  boolean bIsOnLine;
 
 	public String getAndroidVersion() {

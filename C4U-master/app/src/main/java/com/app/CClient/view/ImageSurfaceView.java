@@ -30,15 +30,7 @@ public class ImageSurfaceView extends SurfaceView implements SurfaceHolder.Callb
     private long                 speed             =     1000;
     
     private static Matrix matrix             =     new Matrix();
-    /**
-     * @param context
-     * <see>����</see>
-     * @param list
-     * <see>ͼƬ��ַ�б� </see>
-     * @param rate
-     * <see>ͼƬ�л�ʱ�䡡��λ:����</see>
-     * 
-     */
+
     public ImageSurfaceView(Context context, List<String> list, long speed) {
         super(context);
         if(list!=null && list.size()>0){

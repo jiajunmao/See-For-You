@@ -10,6 +10,15 @@ public class WifiBean
     private String password;
     private int type;
 
+    public int getWifitype() {
+        return wifitype;
+    }
+
+    public void setWifitype(int wifitype) {
+        this.wifitype = wifitype;
+    }
+
+    private int wifitype;
     public String getPath() {
         return path;
     }

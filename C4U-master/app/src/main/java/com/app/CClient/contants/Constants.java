@@ -77,6 +77,7 @@ public class Constants
     public static final String FTP_DELETEFILE_SUCCESS = "FTP_DELETEFILE_SUCCESS";
     public static final String FTP_DELETEFILE_FAIL = "FTP_DELETEFILE_FAIL";
     public static final String YEA = "YEAR";
+    public static final String YEA2 = "YEAR";
     public static final String MONT= "MONTH";
     public static final String YEAR = "YEAR";
     public static final String MONTH = "MONTH";
@@ -86,7 +87,7 @@ public class Constants
     public static final String SECOND = "SECOND";
    public static final String SPS_FRAME="674d001fe5402802d880";
    public static final String PPS_FRAME="68ee3112";
-
+    public static final String PPS_FRAM="68ee3112";
    public static final String FTP_UPLOAD_SUCCESS2 = "FTP_UPLOAD_SUCCESS";
    public static final String FTP_UPLOAD_FAIL2 = "FTP_UPLOAD_FAIL";
    public static final String FTP_UPLOAD_LOADING2 = "FTP_UPLOAD_LOADING";
@@ -97,6 +98,7 @@ public class Constants
    public static final String WIFI_PARA = "Wifi_Param";
    public static final String WIFI_SSI = "ssid";
    public static final String WIFI_PASSWOR = "pass_phrase";
+
 
 
 }

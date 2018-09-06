@@ -13,4 +13,7 @@ public class Const {
 
     public static int addres = 0;
     public  static int rtmp = 0;
+
+    public static int addresname = 0;
+    public  static int rtmp_path = 0;
 }

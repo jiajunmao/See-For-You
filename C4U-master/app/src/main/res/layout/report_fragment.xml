@@ -12,6 +12,7 @@
      android:layout_width="match_parent"
      android:layout_height="wrap_content">
      <TextView
+
          android:id="@+id/call_tv"
          android:gravity="center"
          android:drawableTop="@drawable/video_call_press_button"
@@ -23,6 +24,7 @@
          android:layout_height="wrap_content" />
 
      <TextView
+
          android:gravity="center"
          android:drawableTop="@drawable/remote_control_press_button"
          android:textColor="@color/Font_color"
