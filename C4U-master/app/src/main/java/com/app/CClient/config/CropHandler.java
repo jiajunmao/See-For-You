@@ -20,7 +20,7 @@ public interface CropHandler {
 
     void onCompressed(Uri uri);
 
-    void onCancel();
+    void onCancel(boolean isopen);
 
     void onFailed(String message);
     void succeed();
