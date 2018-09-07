@@ -23,7 +23,7 @@ public interface CropHandler {
     void onCancel();
 
     void onFailed(String message);
-
+    void succeed();
     void handleIntent(Intent intent, int requestCode);
     void setdevicename(String deivicename);
     CropParams getCropParams();
