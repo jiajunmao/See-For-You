@@ -27,6 +27,6 @@ public interface CropHandler {
     void handleIntent(Intent intent, int requestCode);
     void setdevicename(String deivicename);
     void start(int type);
-    void stop();
+    void stop(boolean isstop);
     CropParams getCropParams();
 }
