@@ -29,5 +29,6 @@ public interface CropHandler {
     void start(int type);
     void stop(boolean isstop);
     void get();
+    void set();
     CropParams getCropParams();
 }
