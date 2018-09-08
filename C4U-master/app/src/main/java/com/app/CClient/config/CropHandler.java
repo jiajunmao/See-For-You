@@ -28,7 +28,7 @@ public interface CropHandler {
     void setdevicename(String deivicename);
     void start(int type);
     void stop(boolean isstop);
-    void get();
+    void get(int data);
     void set();
     CropParams getCropParams();
 }
