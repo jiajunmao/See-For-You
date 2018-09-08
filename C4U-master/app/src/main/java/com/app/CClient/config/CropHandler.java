@@ -31,5 +31,6 @@ public interface CropHandler {
     void get(int data);
     void set(int setdata);
     void onpaon();
+    void onsetname();
     CropParams getCropParams();
 }
