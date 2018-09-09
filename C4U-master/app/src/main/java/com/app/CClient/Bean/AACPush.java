@@ -8,4 +8,5 @@ public interface AACPush {
     void pushh264(byte[] data,int len);
     void pushPcm(byte[] data,int len);
     void pullh264(byte[] data,int len);
+    void pullPCM(byte[] data,int len);
 }
