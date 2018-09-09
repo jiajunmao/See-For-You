@@ -69,7 +69,8 @@ public class Constants
     public static final String FTP_UPLOAD_LOADING = "FTP_UPLOAD_LOADING";
     public static final String NUM = "num";
     public static final String DELAY = "delay";
-
+    public static final String NUM2 = "num";
+    public static final String DELAY2 = "delay";
     public static final String FTP_DOWN_LOADING = "FTP_DOWN_LOADING";
     public static final String FTP_DOWN_SUCCESS = "FTP_DOWN_SUCCESS";
     public static final String FTP_DOWN_FAIL = "FTP_DOWN_FAIL";
