@@ -10,6 +10,7 @@ public class WifiBean
     private String password;
     private int type;
     private String openwifi;
+    private String closewifi;
     public int getWifitype() {
         return wifitype;
     }
