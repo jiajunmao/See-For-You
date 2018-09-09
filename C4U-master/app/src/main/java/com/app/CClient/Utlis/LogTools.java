@@ -69,6 +69,5 @@ public class LogTools {
         Log.e(TAG, "==================================");
         Log.e(TAG, msg);
         Log.e(TAG, stackTrace);
-        Log.e(TAG, "-----------------------------------");
     }
 }
