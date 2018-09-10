@@ -15,6 +15,15 @@ public class RemotePassword {
     private static final int STATE_RIGHT_PASSWORD = 2;
     private static final int STATE_CHECD_PASSWORD = 3;
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    private String password;
     private SharedPreferences sp;
     private String serial;
     public RemotePassword(Context context,String serial) {

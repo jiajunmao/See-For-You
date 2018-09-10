@@ -69,7 +69,7 @@ public class SlideMenu extends ViewGroup {
 		int childCount = getChildCount();
 		if (childCount != 2) {
 
-			
+
 			throw new IllegalStateException(
 					"The childCount of SlidingMenu must be 2");
 		}
