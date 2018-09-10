@@ -17,4 +17,5 @@ public class Const {
     public static int addresname = 0;
     public  static int rtmp_path = 0;
     public static int datatype = 0;
+    public static int getlongitude = 0;
 }
