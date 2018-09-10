@@ -41,18 +41,7 @@ import java.io.StringWriter;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-/**
- * The purpose of this class is to detect and by-pass some bugs (or
- * underspecified configuration) that encoders available through the MediaCodec
- * API may have. <br />
- * Feeding the encoder with a surface is not tested here. Some bugs you may have
- * encountered:<br />
- * <ul>
- * <li>U and V panes reversed</li>
- * <li>Some padding is needed after the Y pane</li>
- * <li>stride!=width or slice-height!=height</li>
- * </ul>
- */
+
 @SuppressLint("NewApi")
 public class EncoderDebugger {
 

@@ -8,6 +8,15 @@ import java.io.File;
 
 public class MediaUtil
 {
+	public String getMedia() {
+		return media;
+	}
+
+	public void setMedia(String media) {
+		this.media = media;
+	}
+
+	private String media;
 	public static void deleteFile(String path){
 		File mp4File = new File(path);
 		if(mp4File.exists()){
