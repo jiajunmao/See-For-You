@@ -49,6 +49,17 @@ public class SharedPreferencesUtil
 		SharedPreferences sp = context.getSharedPreferences(CONFIGFILE, Context.MODE_PRIVATE);
 		return sp.getString(WIFI_PASSWORD,"");
 	}
+
+
+	public static void setdevice(Context context, String wifipassword){
+		SharedPreferences sp = context.getSharedPreferences(CONFIGFILE, Context.MODE_PRIVATE);
+		sp.edit().putString(WIFI_PASSWORD,wifipassword).commit();
+	}
+
+	public static String getdevice(Context context){
+		SharedPreferences sp = context.getSharedPreferences(CONFIGFILE, Context.MODE_PRIVATE);
+		return sp.getString(WIFI_PASSWORD,"");
+	}
 	//lifting
 
 
