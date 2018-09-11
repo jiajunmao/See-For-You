@@ -5,4 +5,5 @@ public interface exitin {
     void setexitintype(int type);
     void isexit(boolean isexit);
     void adddata();
+    void setusername();
 }
