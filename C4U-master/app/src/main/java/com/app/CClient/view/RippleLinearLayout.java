@@ -100,15 +100,7 @@ public class RippleLinearLayout extends LinearLayout {
     }
 
     private void updateDrawData() {
-        //        int radiusLeftTop = (int) Math.sqrt((mRect.left - mInitX) * (mRect.left - mInitX) +
-        //                (mRect.top - mInitY) * (mRect.top - mInitY));
-        //        int radiusRightTop = (int) Math.sqrt((mRect.right - mInitX) * (mRect.right - mInitX) +
-        //                (mRect.top - mInitY) * (mRect.top - mInitY));
-        //        int radiusLeftBottom = (int) Math.sqrt((mRect.left - mInitX) * (mRect.left - mInitX) +
-        //                (mRect.bottom - mInitY) * (mRect.bottom - mInitY));
-        //        int radiusRightBottom = (int) Math.sqrt((mRect.right - mInitX) * (mRect.right - mInitX) +
-        //                (mRect.bottom - mInitY) * (mRect.bottom - mInitY));
-        //        mRadius = getMax(radiusLeftTop, radiusRightTop, radiusLeftBottom, radiusRightBottom);
+  
         /*最大半径*/
         mRadius = (float) Math.sqrt(mRect.width() / 2 * mRect.width() / 2 + mRect.height() / 2 * mRect.height() / 2);
         ;
