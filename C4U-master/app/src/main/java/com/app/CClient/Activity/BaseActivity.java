@@ -14,7 +14,6 @@ import com.app.CClient.fragmenttabhost.R;
 public class BaseActivity extends AppCompatActivity {
 
     private ActionBar actionBar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
