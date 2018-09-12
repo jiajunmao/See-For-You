@@ -17,7 +17,6 @@ import com.app.CClient.fragmenttabhost.R;
  */
 
 public class ActionBar {
-
     private TextView titleView;
     public Button nextBtn;
     private ImageView nextImgBtn;
