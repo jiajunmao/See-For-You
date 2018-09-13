@@ -215,7 +215,7 @@ public enum EditTextStyle implements IEditTextStyle {
 	public static final int ERROR_LENGTH = 3;
 	public static final int ERROR_BOUND = 4;
 	public static final int ERROR_EQUAL = 5;
-	
+	public static final int ERROR_EQUALs = 6;
 	
 
 }
