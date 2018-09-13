@@ -18,5 +18,7 @@ private String type;
    public void settype( String type){
        this.type =type;
    }
-
+   public String getType(){
+       return type;
+   }
 }
