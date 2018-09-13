@@ -15,5 +15,8 @@ private String type;
    public static void removedata(){
 
    }
+   public void settype( String type){
+       this.type =type;
+   }
 
 }
