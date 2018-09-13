@@ -100,7 +100,7 @@ public class RippleLinearLayout extends LinearLayout {
     }
 
     private void updateDrawData() {
-  
+
         /*最大半径*/
         mRadius = (float) Math.sqrt(mRect.width() / 2 * mRect.width() / 2 + mRect.height() / 2 * mRect.height() / 2);
         ;
