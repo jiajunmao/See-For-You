@@ -18,6 +18,15 @@ public class YUVBean {
     private boolean isEnableSoftCodec;
     private boolean isFrontCamera;
 
+    public boolean isCamera() {
+        return isCamera;
+    }
+
+    public void setCamera(boolean camera) {
+        isCamera = camera;
+    }
+
+    private boolean isCamera;
     public String getPath() {
         return path;
     }

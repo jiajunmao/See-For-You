@@ -22,6 +22,7 @@ public class LoginActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         initview();
+
     }
     private void initview(){
         pwdTextChecker = new EditTextChecker(this);

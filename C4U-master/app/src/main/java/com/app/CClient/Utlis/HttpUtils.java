@@ -27,7 +27,7 @@ public class HttpUtils
 {
 
     private static final int TIMEOUT_IN_MILLIONS = 1000 * 10;
-
+    private int time = 0;
     public interface CallBack
     {
         void onRequestComplete(String result);

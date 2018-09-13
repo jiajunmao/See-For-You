@@ -15,7 +15,7 @@ public class Constants {
 	public static final String TRADE_TYPE = "APP";
 	//秘钥
 	public static final String MY = "eKmkva3e6i5WUyWKyiYx4k2qVt4YI21a";
-
+	public static final String USER_ID = "132dfsdfgf4352312";
 
     public static class ShowMsgActivity {
 		public static final String STitle = "showmsg_title";

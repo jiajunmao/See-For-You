@@ -9,12 +9,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by donglinghao on 2016-01-28.
- *
- *
- *
- */
 public class MineFragment extends Fragment {
 
     private View mRootView;

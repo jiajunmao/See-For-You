@@ -7,6 +7,15 @@ public class UpdateInfo {
     private String mDownloadURL;
     private String mCreateTime;
 
+    public String getNetworkstatus() {
+        return networkstatus;
+    }
+
+    public void setNetworkstatus(String networkstatus) {
+        this.networkstatus = networkstatus;
+    }
+
+    private String networkstatus;
     public void setAppID(String appID) {
         this.mAppID = appID;
     }
