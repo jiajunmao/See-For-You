@@ -24,7 +24,7 @@ public class FileUtil {
     public void setFiletype(String filetype) {
         this.filetype = filetype;
     }
-    
+
     private String filetype;
     public static void saveYuvToSdCardStorage(byte[] imageData) {
         File imageFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);

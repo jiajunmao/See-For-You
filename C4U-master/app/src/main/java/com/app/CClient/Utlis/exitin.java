@@ -6,4 +6,5 @@ public interface exitin {
     void isexit(boolean isexit);
     void adddata();
     void setusername();
+    void getusername();
 }
