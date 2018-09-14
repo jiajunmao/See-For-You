@@ -9,7 +9,6 @@ import java.util.Date;
 public class Log {
 	public static boolean DEBUG = true;
 	public static boolean FILE = false;
-
 	public static void file(String lev, String tag, String msg) {
 		File file = new File("/storage/sdcard1/dvr/log.txt");
 		try {
