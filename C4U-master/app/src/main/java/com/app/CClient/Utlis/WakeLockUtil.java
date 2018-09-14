@@ -20,9 +20,7 @@ public class WakeLockUtil
         }
         mWakeLock.acquire();
 
-    }
-
-    ;
+    };
 
     public static void release()
     {
