@@ -11,4 +11,5 @@ public interface exitin {
     void gettimes();
     void addstr();
     void deletestr();
+    void ispush();
 }
