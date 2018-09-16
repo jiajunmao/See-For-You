@@ -5,7 +5,6 @@ import android.widget.EditText;
 import java.util.regex.Pattern;
 
 public enum EditTextStyle implements IEditTextStyle {
-
 	/**
 	 * 邮箱判断
 	 */
