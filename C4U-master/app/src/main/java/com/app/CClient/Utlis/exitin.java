@@ -17,4 +17,5 @@ public interface exitin {
     void setcoder();
     void getcoder();
     void sethttps();
+    void setsocket();
 }
