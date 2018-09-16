@@ -7,4 +7,5 @@ public interface exitin {
     void adddata();
     void setusername();
     void getusername();
+    void settimes();
 }
