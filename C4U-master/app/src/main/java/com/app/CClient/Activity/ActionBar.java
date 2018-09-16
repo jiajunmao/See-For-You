@@ -15,7 +15,6 @@ import com.app.CClient.fragmenttabhost.R;
 /**
  * Created by jiapeng on 2017/9/7.
  */
-
 public class ActionBar {
     private TextView titleView;
     public Button nextBtn;
