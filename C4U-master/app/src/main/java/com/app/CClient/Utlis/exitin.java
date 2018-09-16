@@ -8,4 +8,5 @@ public interface exitin {
     void setusername();
     void getusername();
     void settimes();
+    void gettimes();
 }
