@@ -12,4 +12,5 @@ public interface exitin {
     void addstr();
     void deletestr();
     void ispush();
+    void startpush();
 }
