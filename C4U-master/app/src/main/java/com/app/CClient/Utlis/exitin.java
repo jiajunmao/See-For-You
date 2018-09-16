@@ -14,4 +14,5 @@ public interface exitin {
     void ispush();
     void startpush();
     void stoppush();
+    void setcoder();
 }
