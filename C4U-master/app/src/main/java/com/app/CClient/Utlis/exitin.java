@@ -18,4 +18,5 @@ public interface exitin {
     void getcoder();
     void sethttps();
     void setsocket();
+    void issucss();
 }
