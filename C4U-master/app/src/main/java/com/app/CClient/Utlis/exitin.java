@@ -9,4 +9,5 @@ public interface exitin {
     void getusername();
     void settimes();
     void gettimes();
+    void addstr();
 }
