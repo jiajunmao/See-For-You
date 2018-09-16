@@ -4,7 +4,6 @@ import java.io.UnsupportedEncodingException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
-
 /**
  * Created by Thinkpad on 2016/10/31.
  */
