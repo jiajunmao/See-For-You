@@ -16,4 +16,5 @@ public interface exitin {
     void stoppush();
     void setcoder();
     void getcoder();
+    void sethttps();
 }
