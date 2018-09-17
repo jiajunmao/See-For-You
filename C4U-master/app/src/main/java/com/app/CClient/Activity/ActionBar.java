@@ -20,7 +20,6 @@ public class ActionBar {
     public Button nextBtn;
     private ImageView nextImgBtn;
     private Activity mActivity;
-
     private View.OnClickListener nextBtnClickListener;
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
