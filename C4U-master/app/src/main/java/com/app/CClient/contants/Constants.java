@@ -98,7 +98,7 @@ public class Constants
    public static final String WIFI_PARA = "Wifi_Param";
    public static final String WIFI_SSI = "ssid";
    public static final String WIFI_PASSWOR = "pass_phrase";
-
+    public static final String WIFI_SSI2 = "ssid";
 
 
 }
