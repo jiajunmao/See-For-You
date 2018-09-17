@@ -3,7 +3,6 @@ package com.app.CClient.Utlis;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 public class NetworkUtil {
     /**
      * 没有连接网络
