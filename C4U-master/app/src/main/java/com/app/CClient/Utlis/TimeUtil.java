@@ -2,7 +2,6 @@ package com.app.CClient.Utlis;
 
 public class TimeUtil {
 	public static String timeFormat(int time) {
-
 		String sformat = "00";
 		String mformat = "00";
 		String hformat = "00";

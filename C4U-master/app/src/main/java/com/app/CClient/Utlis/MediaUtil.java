@@ -11,12 +11,20 @@ public class MediaUtil
 	public String getMedia() {
 		return media;
 	}
-
 	public void setMedia(String media) {
 		this.media = media;
 	}
-
 	private String media;
+
+	public String getVideo() {
+		return video;
+	}
+
+	public void setVideo(String video) {
+		this.video = video;
+	}
+
+	private String video;
 	public static void deleteFile(String path){
 		File mp4File = new File(path);
 		if(mp4File.exists()){

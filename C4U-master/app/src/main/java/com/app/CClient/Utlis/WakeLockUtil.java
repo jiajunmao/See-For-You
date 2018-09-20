@@ -2,7 +2,6 @@ package com.app.CClient.Utlis;
 
 import android.content.Context;
 import android.os.PowerManager;
-
 /**
  * Created by Administrator on 2016/12/1.
  */
@@ -20,9 +19,7 @@ public class WakeLockUtil
         }
         mWakeLock.acquire();
 
-    }
-
-    ;
+    };
 
     public static void release()
     {

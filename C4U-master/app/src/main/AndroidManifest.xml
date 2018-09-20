@@ -28,7 +28,6 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-
     <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
 
@@ -64,5 +63,4 @@
           android:configChanges="screenSize|keyboardHidden|orientation"
           ></activity>
     </application>
-
 </manifest>

@@ -3,7 +3,6 @@ package com.app.CClient.Utlis;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-
 public class NetworkUtil {
     /**
      * 没有连接网络
@@ -46,10 +45,10 @@ public class NetworkUtil {
             Process process = runtime.exec("ping -c 3 www.baidu.com");
             int ret = process.waitFor();
             if (ret == 0) {
-                Log.e("MainReceiver","平完有网络");
+                Log.e("MainReceiver","完有网络");
                 return true;
             } else {
-                Log.e("MainReceiver","平完没有网络");
+                Log.e("MainReceiver","没有网络");
                 return false;
             }
         } catch (Exception e) {

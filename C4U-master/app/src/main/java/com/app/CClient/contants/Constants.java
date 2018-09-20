@@ -92,13 +92,13 @@ public class Constants
    public static final String FTP_UPLOAD_SUCCESS2 = "FTP_UPLOAD_SUCCESS";
    public static final String FTP_UPLOAD_FAIL2 = "FTP_UPLOAD_FAIL";
    public static final String FTP_UPLOAD_LOADING2 = "FTP_UPLOAD_LOADING";
-
+    public static final String CONTRAS2 = "M_CTS";
 
    public static final String CONTRAS = "M_CTS";
    public static final String WIFI_PARA = "Wifi_Param";
    public static final String WIFI_SSI = "ssid";
    public static final String WIFI_PASSWOR = "pass_phrase";
-
+    public static final String WIFI_SSI2 = "ssid";
 
 
 }

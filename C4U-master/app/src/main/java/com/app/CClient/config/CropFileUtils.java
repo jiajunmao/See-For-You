@@ -14,7 +14,6 @@ import android.util.Log;
 import java.io.*;
 
 public class CropFileUtils {
-
     final static String TAG = "CropFileUtils";
 
     public static boolean copyFile(String filePath, String destPath) {

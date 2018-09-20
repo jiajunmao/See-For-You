@@ -5,9 +5,6 @@ import android.util.DisplayMetrics;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-/**
- * Created by Administrator on 2016/12/1.
- */
 public class LayoutParamsUtil
 {
     public static ViewGroup.LayoutParams setSDLWindowSize(Context context,FrameLayout frameLayout)

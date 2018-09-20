@@ -15,13 +15,11 @@ import com.app.CClient.fragmenttabhost.R;
 /**
  * Created by jiapeng on 2017/9/7.
  */
-
 public class ActionBar {
     private TextView titleView;
     public Button nextBtn;
     private ImageView nextImgBtn;
     private Activity mActivity;
-
     private View.OnClickListener nextBtnClickListener;
 
     private View.OnClickListener clickListener = new View.OnClickListener() {

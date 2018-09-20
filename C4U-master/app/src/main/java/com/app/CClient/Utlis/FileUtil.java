@@ -1,8 +1,6 @@
 package com.app.CClient.Utlis;
 
-import android.content.Context;
 import android.os.Environment;
-import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -10,7 +8,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_IMAGE;
 import static android.provider.MediaStore.Files.FileColumns.MEDIA_TYPE_VIDEO;
@@ -28,9 +25,6 @@ public class FileUtil {
         this.filetype = filetype;
     }
 
-    /**
-     * save image to sdcard path: Pictures/MyTestImage/
-     */
     private String filetype;
     public static void saveYuvToSdCardStorage(byte[] imageData) {
         File imageFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);

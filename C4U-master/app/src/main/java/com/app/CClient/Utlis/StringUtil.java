@@ -5,11 +5,6 @@ import android.util.Log;
 public class StringUtil {
 	
 	private static final String TAG = "SubstringUtil";
-	/**
-	 * remove ssid \"
-	 * @param ssid
-	 * @return
-	 */
 	public static String getSSID(String ssid){
 		if(ssid.length()>=2){
 			Log.e(TAG, ssid.substring(ssid.length()-1,ssid.length()));

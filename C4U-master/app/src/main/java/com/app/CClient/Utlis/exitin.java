@@ -6,4 +6,17 @@ public interface exitin {
     void isexit(boolean isexit);
     void adddata();
     void setusername();
+    void getusername();
+    void settimes();
+    void gettimes();
+    void addstr();
+    void deletestr();
+    void ispush();
+    void startpush();
+    void stoppush();
+    void setcoder();
+    void getcoder();
+    void sethttps();
+    void setsocket();
+    void issucss();
 }
